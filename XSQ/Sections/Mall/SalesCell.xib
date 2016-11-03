@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="SalesCell">
+            <rect key="frame" x="0.0" y="0.0" width="74" height="67"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="74" height="67"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mall_sort_drink" translatesAutoresizingMaskIntoConstraints="NO" id="XX9-e4-P1k"/>
+                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$999" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mqM-gA-zAm">
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="nGj-DE-KAt"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="XX9-e4-P1k" secondAttribute="bottom" id="1Md-cS-We7"/>
+                <constraint firstItem="mqM-gA-zAm" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="2qF-Nf-daO"/>
+                <constraint firstItem="XX9-e4-P1k" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Ing-23-ZxB"/>
+                <constraint firstAttribute="trailing" secondItem="mqM-gA-zAm" secondAttribute="trailing" id="VTl-tk-Uus"/>
+                <constraint firstItem="XX9-e4-P1k" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="h7i-s5-6Pv"/>
+                <constraint firstAttribute="bottom" secondItem="mqM-gA-zAm" secondAttribute="bottom" id="v3j-vS-bWA"/>
+                <constraint firstAttribute="trailing" secondItem="XX9-e4-P1k" secondAttribute="trailing" id="z7M-nY-UB4"/>
+            </constraints>
+            <size key="customSize" width="79" height="76"/>
+            <connections>
+                <outlet property="priceLabel" destination="mqM-gA-zAm" id="PTh-9e-qh0"/>
+                <outlet property="productImageView" destination="XX9-e4-P1k" id="tXC-Z2-SxK"/>
+            </connections>
+            <point key="canvasLocation" x="46" y="91.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="mall_sort_drink" width="37" height="37"/>
+    </resources>
+</document>
